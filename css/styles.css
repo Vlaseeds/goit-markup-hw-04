@@ -39,6 +39,11 @@ img {
   height: auto;
 }
 
+li {
+  display: list-item;
+  unicode-bidi: isolate;
+}
+
 /* common */
 
 .container {
@@ -285,7 +290,7 @@ img {
   gap: 24px;
   justify-content: space-between;
   text-align: center;
-  max-height: 380px;
+  max-height: 428px;
 }
 
 .team-cards {
@@ -316,6 +321,42 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+.social-lils {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-frame {
+  list-style: none;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-frame .social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-frame .social-link .icon {
+  fill: #F4F4FD;
+}
+
+.social-frame .social-link:hover,
+.social-frame .social-link:focus {
+  background-color: #404bbf;
 }
 
 .portfolio-list {
