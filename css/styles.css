@@ -169,11 +169,9 @@ li {
   align-items: center;         
   padding: 188px 0;
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-people-office.jpg");
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-people-office.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  flex-direction: column;
-  justify-content: center;
   background-position: center;
   margin: 0 126px;
 }
@@ -455,9 +453,11 @@ li {
 
 .footer-container {
   display: flex;
-  gap: 120px;
   align-items: baseline;
-  margin-right: 120px
+}
+
+.footer-about {
+  margin-right: 120px;
 }
 
 .social-text-footer {
